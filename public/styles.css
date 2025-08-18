@@ -1,0 +1,108 @@
+/* GENERAL */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Yeseva One", sans-serif;
+}
+
+/* TYPOGRAPHY */
+.book-query {
+  font-family: "Jost", sans-serif;
+}
+/* CONTROLS */
+.choose-btn {
+  margin: auto;
+}
+.month-btn{
+  color: black;
+  background-color: #fbe8d7;
+  font-size: 20px;
+}
+.choose-btn{
+  font-family: "Jost", sans-serif
+}
+
+/* HEADER */
+.dot {
+  color: #fbe8d7;
+}
+#app-title {
+  color: black;
+}
+.landing-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../assets/bg1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.wrapper {
+  background-color: rgba(211, 211, 211, 0.6);
+  border-radius: 15px;
+  margin: auto;
+  max-width: 55em;
+}
+
+/* MAIN */
+.month-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.3em;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 1em;
+  justify-items: center;
+}
+
+.month-btn {
+  font-family: "Jost", sans-serif;
+  width: 100%;
+  min-height: 50px;
+}
+
+.month-section h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cover-grid .bg-button {
+  display: block;
+  margin: 3em auto 0;
+}
+
+body[class] .cover-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+body[class] .cover-grid .container {
+  max-width: 500px;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 576px) {
+  .cover-grid .col-12 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    padding: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
